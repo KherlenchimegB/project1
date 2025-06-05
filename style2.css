@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.landpage {
+    height: 1300px;
+    width: 2250px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    background: url(./images/HeroImage.png);
+    background-size: cover; 
+    background-position: center;
+    
+}
+
+.navigation {
+    display: flex;
+    height: 43.5px;
+    /* width: 2000px; */
+    justify-content: space-around;
+    align-items: center;   
+    padding-top: 30px;
+    padding-left: 118px;
+    padding-right: 118px;
+}
+.submenu {
+    /* padding-top: 11px;
+    padding-bottom: 10.5px; */
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    gap: 24px;
+}
+.menuname {
+    /* padding-top: 11px;
+    padding-bottom: 10.5px; */
+    width: 100px;
+    height: 22px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 618px;
+    height: 80px;
+}
+
+.pure { 
+    height: ;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: rgba(232, 237, 242, 0.72);
+    font-size: 80px;
+    font-family:'Segoe UI', Tahoma, Verdana;
+    opacity: 72%;  
+}
+.awaits {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(253, 253, 254);
+    font-size: 250px;
+    font-family:'Segoe UI', Tahoma; 
+}
+.year {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 80px;
+    font-family:'Segoe UI', Tahoma, Verdana;
+    opacity: 80%;  
+}  
+
+
+    
+    
+   

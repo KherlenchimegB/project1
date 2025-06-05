@@ -1,0 +1,139 @@
+.container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  background-color: rgb(25, 29, 71);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.box {
+  width: 10px;
+  height: 40px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.box1-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  /* animation: (animation-name) (animation-duration) (animation-fill-mode) (animation-timing-function) (animation-iteration-count) (animation-direction) (animation-delay); */
+}
+
+.box2-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.1s;
+  animation-direction: alternate;
+}
+
+.box3-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+}
+
+.box4-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+
+.box5-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.4s;
+  animation-direction: alternate;
+}
+
+.box6-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+}
+
+.box7-animation {
+  animation-name: box_dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.6s;
+  animation-direction: alternate;
+}
+
+@keyframes box_dance {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(216, 207, 207);
+  opacity: 0.8;
+  /* transition: all 0.2s ease-in; */
+}
+
+.anim1 {
+  animation: circle-ani 1s forwards ease-in-out infinite alternate;
+  /* animation: (animation-name) 
+  (animation-duration) 300ms, 0.5s .... 
+  (animation-fill-mode) forwards .....
+  (animation-timing-function) ease-in-out, linear ....  
+  (animation-iteration-count) infinite, 3, ...
+  (animation-direction) alternate, normal ...
+  (animation-delay); 
+  */
+}
+
+.anim2 {
+  animation: circle-animation 1s forwards ease-in-out infinite alternate 0.1s;
+}
+
+.anim3 {
+  animation: circle-ani 1s forwards ease-in-out infinite alternate 0.2s;
+}
+
+@keyframes circle-ani {
+  0% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes circle-animation {
+  0% {
+    transform: translateY(55px);
+  }
+
+  100% {
+    transform: translateY(-55px);
+  }
+}
